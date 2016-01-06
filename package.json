@@ -1,0 +1,26 @@
+{
+  "name": "react-fluxible-utils",
+  "version": "0.0.1",
+  "description": "A collection of extremely useful utils and components for React+Fluxible applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zoover",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zoover/react-fluxible-utils.git"
+  },
+  "license": "ISC",
+  "keywords": [
+    "flux",
+    "fluxible",
+    "utils",
+    "react"
+  ],
+  "dependencies": {
+    "fluxible-addons-react": "^0.2",
+    "react": "^0.14",
+    "react-safe-render": "^1.0"
+  }
+}
