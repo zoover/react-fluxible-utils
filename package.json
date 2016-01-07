@@ -20,7 +20,9 @@
   ],
   "dependencies": {
     "fluxible-addons-react": "^0.2",
-    "react": "^0.14",
-    "react-safe-render": "^1.0"
+    "react": "^0.14.6",
+    "react-addons-test-utils": "^0.14",
+    "react-safe-render": "^1.0",
+    "react-shallow-testutils": "^0.7"
   }
 }
