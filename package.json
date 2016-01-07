@@ -1,6 +1,6 @@
 {
   "name": "react-fluxible-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A collection of extremely useful utils and components for React+Fluxible applications.",
   "main": "index.js",
   "scripts": {
