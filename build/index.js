@@ -9,21 +9,21 @@ var _connectToStores = require('./lib/connectToStores');
 
 var _connectToStores2 = _interopRequireDefault(_connectToStores);
 
-var _ReactSafeRender = require('./lib/ReactSafeRender');
+var _reactSafeRender = require('./lib/reactSafeRender');
 
-var _ReactSafeRender2 = _interopRequireDefault(_ReactSafeRender);
+var _reactSafeRender2 = _interopRequireDefault(_reactSafeRender);
 
-var _MockDispatcher = require('./test/MockDispatcher');
+var _mockDispatcher = require('./test/mockDispatcher');
 
-var _MockDispatcher2 = _interopRequireDefault(_MockDispatcher);
+var _mockDispatcher2 = _interopRequireDefault(_mockDispatcher);
 
-var _ShallowComponent = require('./test/ShallowComponent');
+var _shallowComponent = require('./test/shallowComponent');
 
-var _ShallowComponent2 = _interopRequireDefault(_ShallowComponent);
+var _shallowComponent2 = _interopRequireDefault(_shallowComponent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.connectToStores = _connectToStores2.default;
-exports.ReactSafeRender = _ReactSafeRender2.default;
-exports.MockDispatcher = _MockDispatcher2.default;
-exports.ShallowComponent = _ShallowComponent2.default;
+exports.ReactSafeRender = _reactSafeRender2.default;
+exports.MockDispatcher = _mockDispatcher2.default;
+exports.ShallowComponent = _shallowComponent2.default;
