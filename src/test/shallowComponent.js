@@ -2,6 +2,7 @@ import React from 'react';
 import { createMockComponentContext } from 'fluxible/utils';
 import { createRenderer } from 'react-addons-test-utils';
 import ShallowTestUtils from 'react-shallow-testutils';
+import _ from 'lodash';
 
 export default class ShallowComponent {
   constructor(component) {
@@ -12,7 +13,7 @@ export default class ShallowComponent {
   }
 
   withProps(props) {
-    this.props = props;
+    this.props = _.assign(this.props, props);
     return this;
   }
 

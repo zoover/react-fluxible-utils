@@ -20,6 +20,7 @@
   ],
   "dependencies": {
     "fluxible-addons-react": "^0.2",
+    "lodash": "^3.10.1",
     "react": "^0.14.6",
     "react-addons-test-utils": "^0.14",
     "react-safe-render": "^1.0",
