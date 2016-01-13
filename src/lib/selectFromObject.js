@@ -1,4 +1,4 @@
-const selectFromObject = function (object, key, defaultValue) {
+const selectFromObject = function selectFromObject(object, key, defaultValue) {
   let _index;
   if (typeof object === 'undefined') {
     return defaultValue;
@@ -11,6 +11,6 @@ const selectFromObject = function (object, key, defaultValue) {
     return object[key];
   }
   return defaultValue;
-}
+};
 
 export default selectFromObject;

@@ -18,6 +18,10 @@ var _reactShallowTestutils = require('react-shallow-testutils');
 
 var _reactShallowTestutils2 = _interopRequireDefault(_reactShallowTestutils);
 
+var _lodash = require('lodash');
+
+var _lodash2 = _interopRequireDefault(_lodash);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -35,7 +39,7 @@ var ShallowComponent = function () {
   _createClass(ShallowComponent, [{
     key: 'withProps',
     value: function withProps(props) {
-      this.props = props;
+      this.props = _lodash2.default.assign(this.props, props);
       return this;
     }
   }, {
