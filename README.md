@@ -21,18 +21,6 @@ import {ReactSafeRender as React} from 'react-fluxible-utils';
 const React = require('react-fluxible-utils').ReactSafeRender;
 ```
 
-## `connectToStores`
-
-A wrapper around the Fluxible `connectToStores`. The purpose of this wrapper is to not lose the original component as normally is the case, but still have it accessible as a `.original` property. This is useful for testing a component with the `shallowComponent` utility as described later. To use this wrapper, just replace the line where you import `connectToStores` with:
-
-```javascript
-// ES6 syntax
-import {connectToStores} from 'react-fluxible-utils';
-
-// ES5 syntax
-const connectToStores = require('react-fluxible-utils').connectToStores;
-```
-
 ## `selectFromObject`
 
 A util to select a property from an object, and if it doesn't exist, return a default value, instead of throwing an error or returning an undefined value. An example of how it can be used:
@@ -50,6 +38,18 @@ const o = {
 selectFromObject(o, 'foo', 'wut?'); // => returns 'bar'
 selectFromObject(o, 'xxx.yyy', 'wut?'); // => returns 'zzz'
 selectFromObject(o, 'aaa.bbb', 'wut?'); // => returns 'wut?'
+```
+
+## `connectToStores`
+
+A wrapper around the Fluxible `connectToStores`. The purpose of this wrapper is to not lose the original component as normally is the case, but still have it accessible as a `.original` property. This is needed when testing a component with the `shallowComponent` utility as described later. To use this wrapper, just replace the line where you import `connectToStores` with:
+
+```javascript
+// ES6 syntax
+import {connectToStores} from 'react-fluxible-utils';
+
+// ES5 syntax
+const connectToStores = require('react-fluxible-utils').connectToStores;
 ```
 
 ## `shallowComponent`
