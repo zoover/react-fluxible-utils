@@ -41,7 +41,7 @@ A util to select a property from an object, and if it doesn't exist, return a de
 import {selectFromObject} from 'react-fluxible-utils';
 
 const o = { 
-  foo: 'bar, 
+  foo: 'bar', 
   xxx: { 
     yyy: 'zzz'
   } 
