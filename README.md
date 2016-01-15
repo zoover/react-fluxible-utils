@@ -7,7 +7,7 @@ To start using this library, first install the package:
 npm install react-fluxible-utils --save
 ```
 
-Then your all set up to use the following utils and components: 
+Then you're all set up to use the following utils and components: 
 
 ## `reactSafeRender`
 
