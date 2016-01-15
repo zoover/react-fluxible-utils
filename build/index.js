@@ -3,32 +3,48 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.selectFromObject = exports.ShallowComponent = exports.MockDispatcher = exports.ReactSafeRender = exports.connectToStores = undefined;
 
 var _connectToStores = require('./lib/connectToStores');
 
-var _connectToStores2 = _interopRequireDefault(_connectToStores);
+Object.defineProperty(exports, 'connectToStores', {
+  enumerable: true,
+  get: function get() {
+    return _connectToStores.default;
+  }
+});
 
 var _reactSafeRender = require('./lib/reactSafeRender');
 
-var _reactSafeRender2 = _interopRequireDefault(_reactSafeRender);
+Object.defineProperty(exports, 'ReactSafeRender', {
+  enumerable: true,
+  get: function get() {
+    return _reactSafeRender.default;
+  }
+});
 
 var _mockDispatcher = require('./lib/mockDispatcher');
 
-var _mockDispatcher2 = _interopRequireDefault(_mockDispatcher);
+Object.defineProperty(exports, 'MockDispatcher', {
+  enumerable: true,
+  get: function get() {
+    return _mockDispatcher.default;
+  }
+});
 
 var _shallowComponent = require('./lib/shallowComponent');
 
-var _shallowComponent2 = _interopRequireDefault(_shallowComponent);
+Object.defineProperty(exports, 'ShallowComponent', {
+  enumerable: true,
+  get: function get() {
+    return _shallowComponent.default;
+  }
+});
 
 var _selectFromObject = require('./lib/selectFromObject');
 
-var _selectFromObject2 = _interopRequireDefault(_selectFromObject);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.connectToStores = _connectToStores2.default;
-exports.ReactSafeRender = _reactSafeRender2.default;
-exports.MockDispatcher = _mockDispatcher2.default;
-exports.ShallowComponent = _shallowComponent2.default;
-exports.selectFromObject = _selectFromObject2.default;
+Object.defineProperty(exports, 'selectFromObject', {
+  enumerable: true,
+  get: function get() {
+    return _selectFromObject.default;
+  }
+});
