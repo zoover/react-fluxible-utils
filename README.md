@@ -85,10 +85,10 @@ A class useful for testing Fluxible stores. This can be used as follows:
 
 ```javascript
 import {MockDispatcher} from 'react-fluxible-utils';
-import StoreToStest from 'StoreToTest';
+import StoreToTest from 'StoreToTest';
 
 // in your tests, you can now do things like this:
-const dispatcherMock = new MockDispatcher(UserStoreToStestStore);
+const dispatcherMock = new MockDispatcher(StoreToTest);
 const store = dispatcherMock.getStore();
 
 // then you can mock event dispatching for easily writing tests:
