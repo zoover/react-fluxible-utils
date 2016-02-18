@@ -4,7 +4,7 @@ export default class MockDispatcher {
 
   constructor(store) {
     this.actionContext = createMockActionContext({
-      stores: [store]
+      stores: [store],
     });
     this.store = this.actionContext.getStore(store);
   }

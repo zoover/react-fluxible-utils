@@ -9,7 +9,7 @@ var _connectToStores = require('./lib/connectToStores');
 Object.defineProperty(exports, 'connectToStores', {
   enumerable: true,
   get: function get() {
-    return _connectToStores.default;
+    return _interopRequireDefault(_connectToStores).default;
   }
 });
 
@@ -18,7 +18,7 @@ var _reactSafeRender = require('./lib/reactSafeRender');
 Object.defineProperty(exports, 'ReactSafeRender', {
   enumerable: true,
   get: function get() {
-    return _reactSafeRender.default;
+    return _interopRequireDefault(_reactSafeRender).default;
   }
 });
 
@@ -27,7 +27,7 @@ var _mockDispatcher = require('./lib/mockDispatcher');
 Object.defineProperty(exports, 'MockDispatcher', {
   enumerable: true,
   get: function get() {
-    return _mockDispatcher.default;
+    return _interopRequireDefault(_mockDispatcher).default;
   }
 });
 
@@ -36,15 +36,8 @@ var _shallowComponent = require('./lib/shallowComponent');
 Object.defineProperty(exports, 'ShallowComponent', {
   enumerable: true,
   get: function get() {
-    return _shallowComponent.default;
+    return _interopRequireDefault(_shallowComponent).default;
   }
 });
 
-var _selectFromObject = require('./lib/selectFromObject');
-
-Object.defineProperty(exports, 'selectFromObject', {
-  enumerable: true,
-  get: function get() {
-    return _selectFromObject.default;
-  }
-});
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

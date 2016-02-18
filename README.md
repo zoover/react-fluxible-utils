@@ -7,7 +7,7 @@ To start using this library, first install the package:
 npm install react-fluxible-utils --save
 ```
 
-Then you're all set up to use the following utils and components: 
+Then you're all set up to use the following utils and components:
 
 ## `reactSafeRender`
 
@@ -19,25 +19,6 @@ import {ReactSafeRender as React} from 'react-fluxible-utils';
 
 // ES5 syntax
 const React = require('react-fluxible-utils').ReactSafeRender;
-```
-
-## `selectFromObject`
-
-A util to select a property from an object, and if it doesn't exist, return a default value, instead of throwing an error or returning an undefined value. An example of how it can be used:
-
-```javascript
-import {selectFromObject} from 'react-fluxible-utils';
-
-const o = { 
-  foo: 'bar', 
-  xxx: { 
-    yyy: 'zzz'
-  } 
-};
-
-selectFromObject(o, 'foo', 'wut?'); // => returns 'bar'
-selectFromObject(o, 'xxx.yyy', 'wut?'); // => returns 'zzz'
-selectFromObject(o, 'aaa.bbb', 'wut?'); // => returns 'wut?'
 ```
 
 ## `connectToStores`
@@ -67,7 +48,7 @@ const component = new ShallowComponent(ComponentToTest).withProps({foo: 'bar'});
 // then you can use component for easily writing tests:
 import { expect } from 'chai'; // assuming your using chai
 expect(component.get(SomeSubComponent)).to.be.ok;
-expect(component.get(SomeSubComponent)).to.have.deep.property(...).that.deep.equals(...); 
+expect(component.get(SomeSubComponent)).to.have.deep.property(...).that.deep.equals(...);
 expect(component.getAll(SomeOtherSubComponent)).to.have.length(5);
 
 // you can even test store connections
